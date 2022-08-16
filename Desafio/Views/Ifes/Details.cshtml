@@ -1,0 +1,42 @@
+﻿@model Desafio.Models.Ifes
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Detalhes</h2>
+
+<div>
+    <h4>Ifes</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.telefone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.telefone)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.cnpj }) |
+    @Html.ActionLink("Voltar", "Index")
+</p>

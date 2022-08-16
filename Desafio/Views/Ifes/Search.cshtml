@@ -1,0 +1,42 @@
+﻿@model Desafio.Models.Ifes
+
+@{
+    ViewBag.Title = "Search";
+}
+
+<h2>Pesquisar</h2>
+
+<form asp-controller="Ifes" asp-action="Search">
+    <p>
+        Ifes: <input type="text" name="SearchString" />
+        <input type="submit" value="Pesquisar" />
+    </p>
+</form>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cnpj)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.telefone)
+        </th>
+        <th></th>
+    </tr>
+
+
+</table>
+
+
+    <div>
+        @Html.ActionLink("Voltar", "Index")
+    </div>
+
+
